@@ -26,6 +26,9 @@ class Course:
         
         return value / len(self.students)
     
+    def get_students(self):
+        return [(student.name, student.grade) for student in self.students]
+    
 
 s1 = Student("Arafat", 24, 95)
 s2 = Student("Saki", 25, 85)
@@ -35,6 +38,14 @@ course = Course("Python", 2)
 course.add_student(s1)
 course.add_student(s2)
 print(course.get_average_grade()) 
+print(course.get_students())
+
+java_course = Course("Java", 3)
+java_course.add_student(s1)
+java_course.add_student(s2)
+java_course.add_student(s3)
+print(java_course.get_average_grade())
+print(java_course.get_students())
 
 
 
