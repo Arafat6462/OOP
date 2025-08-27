@@ -8,6 +8,10 @@ class Persion:
     @classmethod
     def get_number_of_people(cls):
         return cls.number_of_people
+    
+    @staticmethod
+    def add(x):
+        return x +10
 
 p1 = Persion("Arafat")
 p2 = Persion("Saki")
@@ -18,3 +22,4 @@ print(p1.number_of_people)
 print(p2.number_of_people)
 
 print(Persion.get_number_of_people())
+print(Persion.add(12))
