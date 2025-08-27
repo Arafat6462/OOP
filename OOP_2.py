@@ -5,6 +5,9 @@ class Pet:
 
     def show(self):
         print(f"I am {self.name} and I am {self.age} years old.")
+    
+    def speak(self):
+        print("I don't know what to say.")
 
 class Dog(Pet):
     def speak(self):
@@ -14,6 +17,9 @@ class Cat(Pet):
     def speak(self):
         print("Meow Meow!")
 
+class Fish(Pet):
+    pass
+
 p = Pet("Buddy", 5)
 p.show()
 cat = Cat("Kitty", 3)
@@ -22,3 +28,6 @@ cat.speak()
 dog = Dog("Tommy", 4)
 dog.show()
 dog.speak()
+fish = Fish("Nemo", 1)
+fish.show()
+fish.speak()
